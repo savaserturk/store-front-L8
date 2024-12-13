@@ -114,8 +114,4 @@ jobs:
           echo "$KUBE_CONFIG_DATA" | base64 -d > kubeconfig
           export KUBECONFIG=kubeconfig
           kubectl rollout status deployment/$DEPLOYMENT_NAME
-<<<<<<< HEAD
           kubectl get pods -o wide
-=======
-          kubectl get pods -o wide
->>>>>>> 66c47d1ec110b90a6ac001ccaab32b803c4a7a6f
